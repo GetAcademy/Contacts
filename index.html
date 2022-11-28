@@ -57,6 +57,11 @@
         function creatOrUpdatePerson() {
             if (model.inputs.id == null) createPerson();
             else updatePerson();
+            model.inputs = {
+                id: null,
+                firstName: null,
+                email: null,
+            };
             updateView();
         }
 
